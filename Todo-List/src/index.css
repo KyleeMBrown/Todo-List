@@ -1,9 +1,18 @@
 body, html {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 #root {
   width: 100%;
   height: 100%;
+  background: linear-gradient(180deg, rgba(0,255,128,1) 0%, rgba(34,152,141,1) 59%);
+}
+
+/*Fonts*/
+
+@font-face {
+  font-family: Sunday Mango;
+  src: url('/src/assets/Sunday Mango.ttf');
 }

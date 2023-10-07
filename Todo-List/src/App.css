@@ -1,1 +1,12 @@
 
+.nav {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.nav h1 {
+  font-family: sunday mango;
+  letter-spacing: 2px;
+  font-size: 35px;
+}
