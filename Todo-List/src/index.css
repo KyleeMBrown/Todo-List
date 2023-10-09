@@ -16,6 +16,13 @@ body, html {
 @font-face {
   font-family: Sunday Mango;
   src: url('/src/assets/Sunday Mango.ttf');
+
+}
+
+@font-face {
+  font-family: Pixels;
+  src: url('/src/assets/Pixelmania.ttf');
+  
 }
 
 /*Animations*/
