@@ -26,8 +26,10 @@
   flex-direction: column;
 }
 
+/*Input styling*/
+
 .todo-input{
-  width: 45%;
+  width: 48%;
   height: 35%;
   background-color: rgb(22, 134, 127);
   border-radius: 15px;
@@ -54,11 +56,17 @@
   border-radius:5px;
   margin-top: 1%;
   background-color:  rgb(22, 134, 127);
-  font-size: 40px;
+  font-size: 35px;
   color: white;
+  padding: 15px;
   transition: color .5s ease;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
 }
 
+/*Add button styling*/
 .todo-button:hover{
   color:  rgb(22, 134, 127);
   background-color: white;
@@ -73,13 +81,15 @@
 }
 
 .todo-div{
-  width: 50%;
+  width: 45%;
   border: 0px solid black;
   height: 20%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
+/*Output Div Styling*/
 
 .output {
   box-shadow:1px 1px 10px;
@@ -98,17 +108,83 @@
   border: 0px solid;
   margin:0;
   padding:0;
-  overflow-y: scroll;
+  overflow-y:scroll;
   
 }
 
-.output li {
+/*Task output styling*/
+.list-div{
+  border: 0px solid;
+  display: flex;
+}
+
+.list-div li {
   color: white;
   font-family: sans-serif;
   width: 100%;
  font-size: 20px;
   list-style-type: none;
   letter-spacing:2px;
-  margin: 25px 0px 25px 0px
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  
 
 }
+
+.checkmark{
+  background-color:transparent;
+  width: 13%;
+  padding: 0;
+  border: none;
+  margin:0;
+}
+.checkmark img {
+  box-shadow: inset 1px 1px 12px white;
+}
+
+.checkmark img:hover {
+  transform: scale(108%);
+  box-shadow: inset 1px 1px 18px white;
+  cursor: pointer;
+}
+.delete {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px 15px 0px 0px;
+}
+
+.delete:hover {
+  text-shadow: 1px 1px 0px black;
+  cursor: pointer;
+  transform: scale(108%);
+}
+/*Clear Button Styling*/
+
+.clear-btn{
+  background-color: rgb(22, 134, 127);
+  color: white;
+  border-radius:5px;
+  margin-top: 3.8%;
+  font-size: 25px;
+  transition: color .5s ease;
+  letter-spacing: 1.3px;
+  border: none;
+  box-shadow: 1px 1px 5px white;
+  font-weight: bolder;
+  padding: 5px;
+  transition: .2s background-color ease;
+}
+
+.clear-btn:hover{
+  background-color: white;
+  color: rgb(22, 134, 127);
+  cursor:pointer;
+}
+.clear-btn:active{
+  color: rgb(172, 78, 98);
+  box-shadow: 1px 1px 10px red;
+}
+
