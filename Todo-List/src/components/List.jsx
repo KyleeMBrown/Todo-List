@@ -7,6 +7,7 @@ const List = (props) => {
     const [cList, setClist]= useState([])
     const handleClick = () => {
         setComplete('none')
+        setClist([...cList, props.task])
         console.log(props.task)
     }
     const handleMouseover = () => {
@@ -19,7 +20,6 @@ const List = (props) => {
             )
         });
     };
-   
     const handleMouseout = () => {
         setDisplay()
     }

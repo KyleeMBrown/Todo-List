@@ -1,5 +1,5 @@
 import React from "react";
-import {useState, useRef} from "react";
+import {useState} from "react";
 import List from "./List";
 
 const TodoList = (props) => {
@@ -16,12 +16,18 @@ const TodoList = (props) => {
             input.current.value = null
         }
     };
- 
+    const handleKeydown = (e) => {
+        if (e.key === 'Enter'){
+            console.log(e.key)
+            handleClick()
+        }
+        
+    }
     return (
         <>
         <div className='todo-div'>
-        <input ref={input} onChange={handleChange} type='text' className={props.inputClass}></input>
-        <button onClick={handleClick}  className={props.addbuttonClass}>+</button>
+        <input onKeyDown={handleKeydown} ref={input} onChange={handleChange} type='text' className={props.inputClass}></input>
+        <button  onClick={handleClick}  className={props.addbuttonClass}>+</button>
         </div>
         <div className='output'>
             <ul>
