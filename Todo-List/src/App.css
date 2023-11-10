@@ -168,7 +168,8 @@
   background-color: rgb(22, 134, 127);
   color: white;
   border-radius:5px;
-  margin-top: 3.8%;
+  margin-top: 3.5%;
+  margin-bottom: 3%;
   font-size: 25px;
   transition: color .5s ease;
   letter-spacing: 1.3px;
@@ -189,3 +190,11 @@
   box-shadow: 1px 1px 10px red;
 }
 
+/*Completed List div Styling*/
+
+.complete {
+  color: green;
+  font-family: sunday mango;
+  text-shadow:1px 1px 5px white;
+  font-size: 35px;
+}

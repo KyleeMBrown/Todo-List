@@ -8,14 +8,16 @@ const List = (props) => {
 
        
     };
-
+    const handleDelete = () =>{
+        props.handleDel(props.task)
+    }
 
     const handleMouseover = () => {
         setDisplay(function changedisplay() {
             return (
                 <>
-                    <button onClick={handleClick} className='checkmark'><img width='30%' src="/src/assets/checkmark-png-5.png"></img></button>
-                    <button  className='delete'>X</button>
+                    <button style={{display:props.checkDisp}} onClick={handleClick} className='checkmark'><img width='30%' src="/src/assets/checkmark-png-5.png"></img></button>
+                    <button style={{display:props.checkDisp}} onClick={handleDelete}  className='delete'>X</button>
                 </>
             )
         });
