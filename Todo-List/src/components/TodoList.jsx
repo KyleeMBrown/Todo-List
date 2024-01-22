@@ -74,7 +74,7 @@ const TodoList = (props) => {
                 }} 
             className={props.clearbuttonClass}
             >CLEAR
-            </button>
+            </button> 
         </>
 
     )
